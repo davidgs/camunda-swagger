@@ -1,26 +1,20 @@
 {
-  "name": "camunda-bpm-api",
-  "version": "0.0.1",
-  "description": "The Camunda BPM API",
+  "name": "camunda-bpm-rest-api",
+  "version": "7.14.0",
+  "description": "OpenApi Spec for Camunda BPM REST API.",
+  "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server --open"
+	"prestart": "npm install",
+	"start": "node index.js"
   },
-  "author": "Shaun Luttin",
-  "license": "Apache-2.0",
-  "devDependencies": {
-    "clean-webpack-plugin": "^1.0.1",
-    "copy-webpack-plugin": "^4.6.0",
-    "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.29.3",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.1.14"
-  },
+  "keywords": [
+    "swagger"
+  ],
+  "license": "Unlicense",
+  "private": true,
   "dependencies": {
-    "css-loader": "^2.1.0",
-    "json-loader": "^0.5.7",
-    "style-loader": "^0.23.1",
-    "swagger-ui": "^3.20.7",
-    "yaml-loader": "^0.5.0"
+    "connect": "^3.2.0",
+    "js-yaml": "^3.3.0",
+    "oas3-tools": "^2.0.2"
   }
 }
