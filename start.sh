@@ -1,4 +1,6 @@
 #!/bin/sh
 
 cd /usr/local/swagger/camunda-swagger
-npm start 
+npm start &
+cd /camunda
+./camunda.sh
