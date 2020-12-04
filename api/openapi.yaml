@@ -16,7 +16,7 @@ servers:
     host:
       default: localhost
     port:
-      default: "8080"
+      default: "8000"
     contextPath:
       default: engine-rest
 - url: http://{host}:{port}/{contextPath}/engine/{engineName}
