@@ -2,6 +2,6 @@
 
 cd /usr/local/swagger/camunda-swagger
 npm start &
-nginx -g --daemon off &
+nginx -c /etc/nginx/nginx.conf &
 cd /camunda
 ./camunda.sh
